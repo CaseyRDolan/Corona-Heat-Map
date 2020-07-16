@@ -7,7 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1Ec0V_9HDSDcn5Tk20ztta8HclhC5wzQR
 """
 
-!pip install country_converter
 import country_converter as coco
 import csv
 import requests
@@ -87,9 +86,9 @@ def get_abbr(state):
     'Wyoming': 'WY'
   } 
   return us_state_abbrev[state.rstrip()]
+
 # Function to scrape COVID-19 data from the Worldometers website for each state
 def scrape_state_data():
-
   data = []
   filename = 'state_data.csv'
   URL = 'https://www.worldometers.info/coronavirus/country/us/'
@@ -103,13 +102,17 @@ def scrape_state_data():
   # Write to .csv file
   with open(filename, 'w') as csvfile:
     csvwriter = csv.writer(csvfile)
-    csvwriter.writerow(['Name', 'Total Cases', 'New Cases', 'Total Deaths', 'New Deaths', 'Active Cases'])
+    csvwriter.writerow(['Code', 'Name', 'Total Cases', 'New Cases', 'Total Deaths', 'New Deaths', 'Active Cases'])
     # For each state, extract data, create a new State object and add it to data
     for state in states:
       numbers = state.find_all('td')
-      new_data = [get_abbr(numbers[0].text.strip('\n')), numbers[1].text.strip('\n').replace(',', ''),\
-                       numbers[2].text.strip('\n'), numbers[3].text.strip('\n'),\
-                       numbers[4].text.strip('\n'), numbers[5].text.strip('\n')]
+      new_data = [get_abbr(numbers[0].text.strip('\n')),\
+                  numbers[0].text.strip('\n'),\
+                  numbers[1].text.strip('\n').replace(',', ''),\
+                  numbers[2].text.strip('\n').replace(',', ''),\
+                  numbers[3].text.strip('\n').replace(',', ''),\
+                  numbers[4].text.strip('\n').replace(',', ''),\
+                  numbers[5].text.strip('\n').replace(',', '')]
       data.append(new_data)
 
     csvwriter.writerows(data)
@@ -132,51 +135,90 @@ def scrape_country_data():
 
   with open(filename, 'w') as csvfile:
     csvwriter = csv.writer(csvfile)
-    csvwriter.writerow(['Name', 'Total Cases', 'New Cases', 'Total Deaths', 'New Deaths', 'Active Cases'])
+    csvwriter.writerow(['Code', 'Name', 'Total Cases', 'New Cases', 'Total Deaths', 'New Deaths', 'Active Cases'])
     # For each country, extract data, create a new State object and add it to data
     for country in countries:
       numbers = country.find_all('td')
-      new_data = [cc.convert(names = numbers[1].text.strip('\n'), to = 'ISO3'), numbers[2].text.strip('\n').replace(',', ''),\
-                      numbers[3].text.strip('\n'), numbers[4].text.strip('\n'),\
-                      numbers[5].text.strip('\n'), numbers[6].text.strip('\n')]
+      name = numbers[1].text.strip('\n')
+      if name == 'Diamond Princess' or name == 'MS Zaandam' or name == 'Channel Islands':
+        continue
+      if name == 'UK':
+        name = 'United Kingdom'
+      elif name == 'UAE':
+        name = 'United Arab Emirates'
+      elif name == 'DRC':
+        name = 'Democratic Republic of the Congo'
+      elif name == 'CAR':
+        name = 'Central African Republic'
+      code = cc.convert(names = name, to = 'ISO3')
+      new_data = [code, cc.convert(names = code, to = 'name_short'), numbers[2].text.strip('\n').replace(',', ''),\
+                  numbers[3].text.strip('\n').replace(',', ''),\
+                  numbers[4].text.strip('\n').replace(',', ''),\
+                  numbers[5].text.strip('\n').replace(',', ''),\
+                  numbers[6].text.strip('\n').replace(',', '')]
       data.append(new_data)
 
     csvwriter.writerows(data)
 
-scrape_state_data()
-scrape_country_data()
+if __name__ == '__main__':
 
-import plotly.graph_objects as go
-import pandas as pd
+  scrape_state_data()
+  scrape_country_data()
 
-df = pd.read_csv('state_data.csv')
+  import plotly.graph_objects as go
+  import pandas as pd
 
-fig = go.Figure(data=go.Choropleth(
-    locations=df['Name'],
-    z = df['Total Cases'],
-    locationmode = 'USA-states',
-    colorscale = 'Reds',
-    colorbar_title = "Total Cases"
-))
+  df = pd.read_csv('state_data.csv')
 
-fig.update_layout(
-    title_text = 'Total Confirmed COVID-19 Cases by State',
-    geo_scope = 'usa'
-)
+  fig = go.Figure(data=go.Choropleth(
+      locations=df['Code'],
+      hovertemplate = '%{text}<br>%{z}<extra></extra>',
+      text = df['Name'],
+      z = df['Total Cases'],
+      locationmode = 'USA-states',
+      colorscale = 'Reds',
+      colorbar_title = "Total Cases",
+      marker_line_color = 'gray',
+      marker_line_width = .5
+  ))
 
-fig.show()
+  fig.update_layout(
+      title_text = 'Total Confirmed COVID-19 Cases by State',
+      geo=dict(
+          resolution = 50,
+          scope = 'usa',
+      ),
+      autosize = False,
+      height = 720,
+      width = 1280
+  )
 
-df = pd.read_csv('country_data.csv')
-fig = go.Figure(data=go.Choropleth(
-    locations = df['Name'],
-    z = df['Total Cases'],
-    locationmode = 'ISO-3',
-    colorscale = 'Reds',
-    colorbar_title = "Total Cases"
-))
+  fig.show()
 
-fig.update_layout(
-    title_text = 'Total Confirmed COVID-19 Cases by Country'
-)
+  df = pd.read_csv('country_data.csv')
+  fig = go.Figure(data=go.Choropleth(
+      hovertemplate = '%{text}<br>%{z}<extra></extra>',
+      locations = df['Code'],
+      text = df['Name'],
+      z = df['Total Cases'],
+      colorscale = 'Reds',
+      colorbar_title = "Total Cases",
+      marker_line_color = 'gray',
+      marker_line_width = .5
+  ))
 
-fig.show()
+  fig.update_layout(
+      title_text = 'Total Confirmed COVID-19 Cases by Country',
+      geo=dict(
+          resolution = 50,
+          showframe=False,
+          showcoastlines=False,
+          coastlinewidth = 0,
+          projection_type='orthographic'
+      ),
+      autosize = False,
+      height = 720,
+      width = 1280
+  )
+
+  fig.show()
