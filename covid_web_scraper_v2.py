@@ -34,45 +34,53 @@ from bs4 import BeautifulSoup
 app = dash.Dash()
 
 app.layout = html.Div([
-      html.Div(
-            id="Map Type",
-            children=[
-            html.P(id="chart-selector", children = "Select chart;"),
+    html.Div(
+        id="Map Type",
+        children=[
+            html.P(id="chart-selector", children = "Select heatmap to view"),
             dcc.Dropdown(
                 id = 'menu',
                 options=[
                     {
-                                    "label": "Total Cases",
-                                    "value": "Total Cases",
-                                },
-                                {
-                                    "label": "Active Cases",
-                                    "value": "Active Cases",
-                                },
-                                 {
-                                    "label": "Cases Today",
-                                    "value": "New Cases",
-                                },
-                                ],
-                               
-                            ),
-                        ],
-                    ),
-                        
-        
-      dcc.Graph(id = "usa-graph"),
-      dcc.Graph(id = "world-graph")
-  ])
+                        "label": "Total Cases",
+                        "value": "Total Cases",
+                    },
+                    {
+                        "label": "Active Cases",
+                        "value": "Active Cases",
+                    },
+                    {
+                        "label": "New Cases Today",
+                        "value": "New Cases",
+                    },
+                ],               
+            ),
+        ],
+    ),                          
+    dcc.Graph(id = "world-graph"),
+    dcc.Graph(id = "usa-graph")
+])
+
+@app.callback(
+    Output('world-graph', 'figure'),
+    [Input('menu', 'value')])
+def update_world_figure(mapType):
+    if mapType == "Total Cases":
+        return drawMap("Total Cases", "Total Confirmed COVID-19 Cases")[1]
+    elif mapType == "Active Cases":
+        return drawMap("Active Cases", "Total Active COVID-19 Cases")[1]
+    else: return drawMap("New Cases", "Total New COVID-19 Cases Today")[1]
+
 @app.callback(
     Output('usa-graph', 'figure'),
     [Input('menu','value' )])
 def update_figure(mapType):
     if(mapType == "Total Cases"):
-        return drawMap("Total Cases")[0]
+        return drawMap("Total Cases", "Total Confirmed COVID-19 Cases")[0]
     elif(mapType == "Active Cases"):
-        return drawMap("Active Cases")[0]
+        return drawMap("Active Cases", "Total Active COVID-19 Cases")[0]
     else:
-        return drawMap("New Cases")[0]
+        return drawMap("New Cases", "Total New COVID-19 Cases Today")[0]
 
 
 def get_abbr(state):
@@ -210,10 +218,7 @@ def scrape_country_data():
 
     csvwriter.writerows(data)
 
-def drawMap(displayValue):
-  
-    
-  
+def drawMap(displayValue, title_text):
 
   df = pd.read_csv('state_data.csv')
   fig = go.Figure(data=go.Choropleth(
@@ -229,7 +234,7 @@ def drawMap(displayValue):
   ))
 
   fig.update_layout(
-      title_text = 'Total Active COVID-19 Cases by State',
+      title_text = title_text + ' by US State',
       geo=dict(
           resolution = 50,
           scope = 'usa',
@@ -254,13 +259,13 @@ def drawMap(displayValue):
   ))
 
   fig2.update_layout(
-      title_text = 'Total Active COVID-19 Cases by Country',
+      title_text = title_text + ' by Country',
       geo=dict(
           resolution = 50,
           showframe=False,
           showcoastlines=False,
           coastlinewidth = 0,
-          projection_type='mercator'
+          projection_type='orthographic'
       ),
       autosize = False,
       height = 900,
@@ -270,18 +275,8 @@ def drawMap(displayValue):
   return thistuple
   
   
-
 if __name__ == '__main__':
   scrape_state_data()
   scrape_country_data()
-  
-  
-  
-
-  
-  
-  
   app.run_server(debug=True)
   
-  
-  #fig.show()

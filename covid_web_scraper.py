@@ -217,7 +217,7 @@ if __name__ == '__main__':
           showframe=False,
           showcoastlines=False,
           coastlinewidth = 0,
-          projection_type='mercator'
+          projection_type='orthographic'
       ),
       autosize = False,
       height = 900,
