@@ -1,52 +1,52 @@
 Code,Name,Total Cases,New Cases,Total Deaths,New Deaths,Active Cases
-NY,New York ,433774 ,+460 ,32570 ,+18 ,162739 
-CA,California ,387510 ,+4542 ,7702  , ,275466 
-FL,Florida ,350047 ,+12478 ,4985 ,+87 ,307652 
-TX,Texas ,331545 ,+1044 ,4009 ,+2 ,157955 
-NJ,New Jersey ,182936 ,,15776  , ,65080 
-IL,Illinois ,162750 ,+965 ,7488 ,+5 ,16752 
-AZ,Arizona ,143624 ,+2359 ,2761 ,+31 ,123202 
-GA,Georgia ,143123 ,+3251 ,3173 ,+5  ,117575 
-MA,Massachusetts ,113238 ,,8419 , ,9429 
-PA,Pennsylvania ,105384 ,+604 ,7084 ,+5 ,22117 
-NC,North Carolina ,99778 ,+1820 ,1651 , ,31003 
-LA,Louisiana ,91706 ,+3116 ,3545 ,+34 ,34873 
-MI,Michigan ,81868 ,+530 ,6366 ,+2 ,20340 
-MD,Maryland ,78131 ,+925 ,3377 ,+9 ,69410 
-TN,Tennessee ,78115 ,+1779 ,843 ,+5 ,32953 
-VA,Virginia ,77430 ,+1057 ,2027 ,+2 ,65386 
-OH,Ohio ,74966 ,+1107 ,3178 ,+40 ,21508 
-SC,South Carolina ,69986 ,+2374 ,1155 ,+20 ,43926 
-AL,Alabama ,67011 ,+1777 ,1287 ,+1 ,35988 
-IN,Indiana ,56571 ,+917 ,2822 ,+2 ,13027 
+NY,New York ,434164 ,,32570 , ,163129 
+CA,California ,391084 ,,7716 ,+3 ,278628 
+FL,Florida ,360394 ,+10347 ,5072 ,+87 ,317393 
+TX,Texas ,339210 ,,4063 , ,162211 
+NJ,New Jersey ,182983 ,,15781 , ,61862 
+IL,Illinois ,162750 ,,7488 , ,16657 
+AZ,Arizona ,145183 ,+1559 ,2784 ,+23 ,124250 
+GA,Georgia ,143123 ,,3173 , ,116879 
+MA,Massachusetts ,113534 ,,8431 , ,9713 
+PA,Pennsylvania ,105384 ,,7084 , ,21520 
+NC,North Carolina ,101046 ,+1230 ,1667 , ,32255 
+LA,Louisiana ,91706 ,,3545 , ,34873 
+MI,Michigan ,81868 ,,6366 , ,20340 
+MD,Maryland ,78685 ,+554 ,3382 ,+5 ,69959 
+VA,Virginia ,78375 ,+945 ,2031 ,+4 ,66327 
+TN,Tennessee ,78115 ,,843 , ,32953 
+OH,Ohio ,74966 ,,3178 , ,20720 
+SC,South Carolina ,69986 ,,1155 , ,43926 
+AL,Alabama ,68857 ,+1846 ,1290 ,+3 ,37831 
+IN,Indiana ,57206 ,+635 ,2825 ,+3 ,13416 
+WA,Washington ,48131 ,,1454 , ,31175 
 CT,Connecticut ,47893 ,,4396 , ,24212 
-WA,Washington ,47137 ,,1451  , ,30762 
-MN,Minnesota ,46204 ,+734 ,1581 ,+3 ,4622 
-MS,Mississippi ,42638 ,+792 ,1355 ,+9 ,15351 
-WI,Wisconsin ,42315 ,+830 ,844 ,+1 ,9467 
-CO,Colorado ,39788 ,,1752 , ,23766 
-IA,Iowa ,38724 ,+683 ,794 ,+5 ,10042 
-NV,Nevada ,35765 ,+1288 ,647 ,+1 ,12207 
-MO,Missouri ,34461 ,,1164 , ,26309 
-UT,Utah ,34117 ,+785 ,243 , ,12959 
-AR,Arkansas ,32533 ,,357 , ,6884 
-OK,Oklahoma ,25265 ,+209 ,451 , ,5348 
-NE,Nebraska ,22481 ,,301 , ,5379 
-KS,Kansas ,22223 ,,307 ,+1 ,9490 
-KY,Kentucky ,22184 ,,667 , ,14693 
-RI,Rhode Island ,17793 ,,990 , ,15086 
-NM,New Mexico ,16736 ,,569 , ,9431 
-OR,Oregon ,14579 ,+430 ,260 ,+3 ,11094 
-ID,Idaho ,14302 ,,119 , ,10194 
-DE,Delaware ,13519 ,+90 ,523 , ,5509 
-DC,District Of Columbia ,11261 ,+67 ,578 , ,8806 
-SD,South Dakota ,7906 ,+44 ,118 ,+2 ,836 
-NH,New Hampshire ,6188 ,,396 , ,571 
-ND,North Dakota ,5019 ,+112 ,92 ,+2 ,796 
-WV,West Virginia ,4983 ,+61 , 100 , ,1256 
-ME,Maine ,3687 ,+41 ,117 , ,434 
-MT,Montana ,2533 ,+62 ,37 , ,1421 
-WY,Wyoming ,2126 ,+18 ,25 ,+1 ,490 
-AK,Alaska ,1874 ,+79 ,18 , ,1144 
-HI,Hawaii ,1354 ,,24 , ,311 
-VT,Vermont ,1350 ,+12 ,56 , ,169  
+MN,Minnesota ,46204 ,,1581 , ,4622 
+MS,Mississippi ,42638 ,,1355 , ,15351 
+WI,Wisconsin ,42315 ,,844 , ,8843 
+CO,Colorado ,40142 ,,1752 , ,24120 
+IA,Iowa ,38999 ,+275 ,796 ,+2 ,10217 
+NV,Nevada ,35765 ,,647 , ,11608 
+MO,Missouri ,35218 ,,1165 , ,27065 
+UT,Utah ,34117 ,,243 , ,12959 
+AR,Arkansas ,33228 ,,357 , ,7579 
+OK,Oklahoma ,25433 ,+168 ,452 ,+1 ,5231 
+KY,Kentucky ,23161 ,,670 , ,15667 
+NE,Nebraska ,22583 ,,301 , ,5170 
+KS,Kansas ,22356 ,,308 ,+1 ,9587 
+RI,Rhode Island ,17904 ,+111 ,995 ,+5 ,15171 
+NM,New Mexico ,16971 ,,571 , ,9636 
+ID,Idaho ,14873 ,,119 , ,10605 
+OR,Oregon ,14579 ,,260 , ,11094 
+DE,Delaware ,13519 ,,523 , ,5634 
+DC,District Of Columbia ,11339 ,+78 ,579 ,+1 ,8874 
+SD,South Dakota ,7906 ,,118 , , 836 
+NH,New Hampshire ,6203 ,,398 , ,554 
+ND,North Dakota ,5126 ,+107 ,93 ,+1 ,814 
+WV,West Virginia ,5080 ,+38 ,100 , ,1353 
+ME,Maine ,3711 ,+24 ,117 , ,435 
+MT,Montana ,2621 ,+88 ,39 ,+2 ,1248 
+WY,Wyoming ,2126 ,,25 , ,486 
+AK,Alaska ,1874 ,,18 , ,1144 
+HI,Hawaii ,1381 ,,24 , ,314 
+VT,Vermont ,1360 ,+10 ,56 , ,165 
