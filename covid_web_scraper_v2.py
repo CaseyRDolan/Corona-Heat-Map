@@ -64,7 +64,7 @@ app.layout = html.Div([
     # Interval component to update data every 10 seconds
     dcc.Interval(
         id = 'interval-component',
-        interval = 10000,
+        interval = 30000,
         n_intervals = 0
     )
 ])
@@ -162,7 +162,7 @@ def get_abbr(state):
 # Function to scrape COVID-19 data from the Worldometers website for each state
 def scrape_state_data():
     data = []
-    filename = 'state_data.csv'
+    filename = 'data/state_data.csv'
     URL = 'https://www.worldometers.info/coronavirus/country/us/'
     page = requests.get(URL) # Visit Worldometers site and download HTML
     soup = BeautifulSoup(page.content, 'html.parser') # Parse HTML content
@@ -178,14 +178,14 @@ def scrape_state_data():
         
         # For each state, extract data, create a new State object and add it to data
         for state in states:
-            numbers = state.find_all('td')
+            numbers = state.find_all('td', limit=6)
             new_data = [get_abbr(numbers[0].text.strip('\n')),
                       numbers[0].text.strip('\n'),
-                      numbers[1].text.strip('\n').replace(',', ''),
-                      numbers[2].text.strip('\n').replace(',', ''),
-                      numbers[3].text.strip('\n').replace(',', ''),
-                      numbers[4].text.strip('\n').replace(',', ''),
-                      numbers[5].text.strip('\n').replace(',', '')]
+                      numbers[1].text.replace(',', ''),
+                      numbers[2].text.replace(',', ''),
+                      numbers[3].text.replace(',', ''),
+                      numbers[4].text.replace(',', ''),
+                      numbers[5].text.replace(',', '')]
             data.append(new_data)
 
         csvwriter.writerows(data)
@@ -195,7 +195,7 @@ def scrape_state_data():
 def scrape_country_data():
     cc = coco.CountryConverter()
     data = []
-    filename = 'country_data.csv'
+    filename = 'data/country_data.csv'
     URL = 'https://www.worldometers.info/coronavirus/#countries'
     page = requests.get(URL)
     soup = BeautifulSoup(page.content, 'html.parser') # Parse HTML content
@@ -213,8 +213,8 @@ def scrape_country_data():
         csvwriter.writerow(['Code', 'Name', 'Total Cases', 'New Cases', 'Total Deaths', 'New Deaths', 'Active Cases'])
         # For each country, extract data and write it to the .csv
         for country in countries:
-            numbers = country.find_all('td')
-            name = numbers[1].text.strip('\n')
+            numbers = country.find_all('td', limit=9)
+            name = numbers[1].text
             # Ignore ships in countries list
             if name == 'Diamond Princess' or name == 'MS Zaandam' or name == 'Channel Islands':
                 continue
@@ -231,11 +231,11 @@ def scrape_country_data():
             code = cc.convert(names = name, to = 'ISO3')
             # Add country data to a list as list of strings
             new_data = [code, cc.convert(names = code, to = 'name_short'),
-                      numbers[2].text.strip('\n').replace(',', ''),
-                      numbers[3].text.strip('\n').replace(',', ''),
-                      numbers[4].text.strip('\n').replace(',', ''),
-                      numbers[5].text.strip('\n').replace(',', ''),
-                      numbers[8].text.strip('\n').replace(',', '')]
+                      numbers[2].text.replace(',', ''),
+                      numbers[3].text.replace(',', ''),
+                      numbers[4].text.replace(',', ''),
+                      numbers[5].text.replace(',', ''),
+                      numbers[8].text.replace(',', '')]
             data.append(new_data)
         # Write all country data to .csv
         csvwriter.writerows(data)
@@ -245,10 +245,10 @@ def scrape_country_data():
 def drawMap(metric, title_text, scope):
     # Format for scope (US/Global)
     if scope == 'USA-states':
-        df = pd.read_csv('state_data.csv')
+        df = pd.read_csv('data/state_data.csv')
         title_ending = ' by US State'
     else:
-        df = pd.read_csv('country_data.csv')
+        df = pd.read_csv('data/country_data.csv')
         title_ending = ' by Country'
     
     # Create figure
@@ -261,29 +261,41 @@ def drawMap(metric, title_text, scope):
         colorscale = 'Reds',
         colorbar_title = metric,
         marker_line_color = 'gray',
-        marker_line_width = .5
-    ))
-    # Give figure style
-    fig.update_layout(
-        title_text = '<b>' + title_text + title_ending,
-        geo=dict(
-            resolution = 50,
-            scope = 'usa' if scope == 'USA-states' else 'world',
-            showframe=False,
-            showcoastlines=False,
-            projection_type = scope if scope == 'orthographic' else 'albers usa'
-        ),
-        autosize = True,
-        width = 1600,
-        height = 900
+        marker_line_width = .5,
+    ),
+    layout=dict(title_text = '<b>' + title_text + title_ending,
+            uirevision = scope,
+            geo=dict(
+                resolution = 50,
+                scope = 'usa' if scope == 'USA-states' else 'world',
+                showframe=False,
+                showcoastlines=False,
+                projection_type = scope if scope == 'orthographic' else 'albers usa'
+            ),
+            autosize = True,
+            width = 1600,
+            height = 900)
     )
+    # Give figure style
+    #fig.update_layout(
+    #    title_text = '<b>' + title_text + title_ending,
+    #    uirevision = scope,
+    #    geo=dict(
+    #        resolution = 50,
+    #        scope = 'usa' if scope == 'USA-states' else 'world',
+    #        showframe=False,
+    #        showcoastlines=False,
+    #        projection_type = scope if scope == 'orthographic' else 'albers usa'
+    #    ),
+    #    autosize = True,
+    #    width = 1600,
+    #    height = 900
+    #)
     
     return fig
   
   
 if __name__ == '__main__':
-  scrape_state_data()
   scrape_country_data()
-  drawMap("Active Cases", "Total Active COVID-19 Cases", "orthographic")
   app.run_server(debug=True)
   
