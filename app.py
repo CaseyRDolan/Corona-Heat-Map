@@ -270,6 +270,9 @@ def drawMap(metric, title_text, scope):
                 scope = 'usa' if scope == 'USA-states' else 'world',
                 showframe=False,
                 showcoastlines=False,
+                showocean=True,
+                oceancolor='lightblue',
+                lakecolor='lightblue' if scope == 'orthographic' else 'white',
                 projection_type = scope if scope == 'orthographic' else 'albers usa'
             ),
             autosize = True,
