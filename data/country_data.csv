@@ -1,12 +1,12 @@
 Code,Name,Total Cases,New Cases,Total Deaths,New Deaths,Active Cases
-USA,United States,4224045,+53727,148103 ,+754,2078999
+USA,United States,4227548,+57230,148163 ,+814,2081542
 BRA,Brazil,2303661,+13710,84440 ,+233,648984
 IND,India,1337022,+48892,31406 ,+761,455509
 RUS,Russia,800849,+5811,13046 ,+154,199029
 ZAF,South Africa,421996,+13944,6343 ,+250,169882
 PER,Peru,371096,,17654 ,,97497
 MEX,Mexico,370712,+8438,41908 ,+718,92595
-CHL,Chile,341304,+2545,8838 ,,18770
+CHL,Chile,341304,+2545,8914 ,+76,18694
 ESP,Spain,319501,+2255,28432 ,+3,N/A
 GBR,United Kingdom,297914,+768,45677 ,+123,N/A
 IRN,Iran,286523,+2489,15289 ,+215,22022
@@ -24,16 +24,16 @@ QAT,Qatar,108638,+394,164 ,,3054
 IRQ,Iraq,104711,+2485,4212 ,+90,29231
 IDN,Indonesia,95418,+1761,4665 ,+89,36808
 EGY,Egypt,90413,,4480 ,,54867
+ECU,Ecuador,79049,+901,5468 ,+29,39037
 SWE,Sweden,78763,,5676 ,,N/A
 KAZ,Kazakhstan,78486,+1687,585 ,,28413
-ECU,Ecuador,78148,,5439 ,,39254
 PHL,Philippines,76444,+2103,1879 ,+15,50063
 OMN,Oman,73791,+1145,359 ,+4,20425
 BLR,Belarus,66846,+158,524 ,+5,6567
 BOL,Bolivia,65252,+1117,2407 ,+79,42815
 BEL,Belgium,64847,+220,9812 ,+4,37666
 UKR,Ukraine,62823,+972,1571 ,+20,26366
-KWT,Kuwait,62625,+753,425 ,+4,9285
+KWT,Kuwait,62625,+753,425  ,+4,9285
 ISR,Israel,59475,+1493,448 ,+6,32230
 DOM,Dominican Republic,59077,+1462,1036 ,+30,30416
 ARE,United Arab Emirates,58249,+261,343 ,+1,6671
@@ -54,7 +54,7 @@ KGZ,Kyrgyz Republic,31247,+898,1211 ,+42,11998
 GHA,Ghana,30366,+694,153 ,,3526
 AZE,Azerbaijan,29312,+332,400 ,+9,7365
 JPN,Japan,27029,,990 ,,5004
-DZA,Algeria,26159,+675,1136 ,+12,7654
+DZA,Algeria,26159,+675,1136  ,+12,7654
 IRL,Ireland,25845,+19,1763 ,,718
 SRB,Serbia,22852,+409,518 ,+10,8287
 MDA,Moldova,22483,+378,726 ,+7,6350
@@ -73,7 +73,7 @@ VEN,Venezuela,13613,,129 ,,5732
 AUS,Australia,13595,+289,139 ,+6,4681
 DNK,Denmark,13438,+48,613 ,+1,485
 ETH,Ethiopia,12693,+760,200 ,+3,6708
-SDN,Sudan,11302,+65,715 ,+7,4732
+SDN,Sudan,11302,+65,715  ,+7,4732
 PSE,Palestine,10093,+349,70 ,+3,7303
 BGR,Bulgaria,9853,,329 ,,4493
 MKD,Macedonia,9797,+128,451 ,+6,4092
@@ -93,7 +93,7 @@ MRT,Mauritania,6116,+49,156 ,,1754
 LUX,Luxembourg,6056,+104,112 ,,1297
 DJI,Djibouti,5039,+8,58 ,,32
 HRV,Croatia,4715,+81,128 ,,1032
-CAF,Central African Republic,4590,,58 ,,3080
+CAF,Central African Republic,4593,+3,59 ,+1,3051
 ALB,Albania,4570,+104,128 ,+5,1834
 HUN,Hungary,4398,+18,596 ,,490
 GRC,Greece,4135,+25,201 ,,2560
@@ -125,7 +125,7 @@ LTU,Lithuania,1986,+26,80 ,,290
 GNB,Guinea-Bissau,1954,,26 ,,1125
 ISL,Iceland,1843,+2,10 ,,10
 SLE,Sierra Leone,1752,,66 ,,394
-RWA,Rwanda,1710,,5 ,,816
+RWA,Rwanda,1729,+19,5 ,,824
 BEN,Benin,1694,,34 ,,742
 YEM,Yemen,1674,+20,469 ,+8,426
 NAM,Namibia,1618,+96,7 ,,1539
@@ -168,7 +168,7 @@ BHS,Bahamas,274,,11 ,,172
 MTQ,Martinique,262,,15 ,,149
 ERI,Eritrea,261,, ,,72
 GMB,Gambia,216,+46,6 ,+1,150
-CYM,Cayman Islands,203,,1 ,,0
+CYM,Cayman Islands,203,,1  ,,0
 KHM,Cambodia,202,+4, ,,60
 GLP,Guadeloupe,195,,14 ,,9
 FRO,Faeroe Islands,191,, ,,3

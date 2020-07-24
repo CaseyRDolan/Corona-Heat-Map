@@ -10,6 +10,7 @@ import requests
 from bs4 import BeautifulSoup
 
 app = dash.Dash()
+server = app.server
 
 app.layout = html.Div([
     # Div to hold the two dropdown menus
