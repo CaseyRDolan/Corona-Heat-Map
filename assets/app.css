@@ -1,0 +1,20 @@
+Label {
+  padding-left: 25%;
+
+  padding-bottom: 1%;
+}
+#scope_menu,
+#metric_menu {
+  height: 20px;
+  width: 200px;
+  color: black;
+}
+#heatmap {
+  height: 80vh;
+  width: 50%;
+}
+#header {
+  font-style: italic;
+  text-align: center;
+  padding-top: 1%;
+}
