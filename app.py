@@ -10,7 +10,7 @@ import requests
 from bs4 import BeautifulSoup
 import dash_bootstrap_components as dbc
 
-app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP],
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP],
                 meta_tags=[{'name': 'viewport', 'content': 'width=device-width, initial-scale=1'}])
 server = app.server
 
@@ -19,7 +19,7 @@ colors = {
     'text': '#7FDBFF'
 }
 
-app.layout = html.Div(__name__, style={'backgroundColor': colors['background'], 'color': colors['text']}, children=[
+app.layout = html.Div( style={'backgroundColor': colors['background'], 'color': colors['text']}, children=[
     # Div to hold the two dropdown menus
     html.H2("COVID-19 Heatmap", id="header"),
     html.Div([
