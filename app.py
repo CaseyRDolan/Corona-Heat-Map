@@ -19,7 +19,7 @@ colors = {
     'text': '#7FDBFF'
 }
 
-app.layout = html.Div(style={'backgroundColor': colors['background'], 'color': colors['text']}, children=[
+app.layout = html.Div(__name__, style={'backgroundColor': colors['background'], 'color': colors['text']}, children=[
     # Div to hold the two dropdown menus
     html.H2("COVID-19 Heatmap", id="header"),
     html.Div([
