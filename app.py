@@ -12,14 +12,14 @@ import dash_bootstrap_components as dbc
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP],
                 meta_tags=[{'name': 'viewport', 'content': 'width=device-width, initial-scale=1'}])
+app.title = 'COVID-19 Heatmap'
 server = app.server
 
 colors = {
-    'background': '#2E2E2E',
-    'text': '#7FDBFF'
+    'text': '#CE1919'
 }
 
-app.layout = html.Div( style={'backgroundColor': colors['background'], 'color': colors['text']}, children=[
+app.layout = html.Div( style={'color': colors['text']}, children=[
     # Div to hold the two dropdown menus
     html.H2("COVID-19 Heatmap", id="header"),
     html.Div([
@@ -300,13 +300,10 @@ def drawMap(metric, title_text, scope):
                         projection_type=scope if scope == 'orthographic' else 'albers usa'
                     ),
                     autosize=True
-                    # plot_bgcolor=colors['background']
                     )
     )
     fig.update_layout(
         geo=dict(bgcolor='rgba(0,0,0,0)'),
-        plot_bgcolor=colors['background'],
-        paper_bgcolor=colors['background'],
         font_color=colors['text']
     )
     # Give figure style

@@ -1,6 +1,6 @@
 Label {
   padding-left: 25%;
-
+  font-weight: bold;
   padding-bottom: 1%;
 }
 #scope_menu,
@@ -8,13 +8,16 @@ Label {
   height: 20px;
   width: 200px;
   color: black;
+  font-weight: normal;
 }
 #heatmap {
   height: 80vh;
   width: 50%;
 }
 #header {
-  font-family:"Times New Roman", Times, serif; 
+  font-weight: bold;
+  font-style: italic;
+  font-family:"Arial", Times, serif; 
   text-align: center;
   padding-top: 1%;
 }

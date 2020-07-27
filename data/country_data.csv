@@ -1,175 +1,175 @@
 Code,Name,Total Cases,New Cases,Total Deaths,New Deaths,Active Cases
-USA,United States,4366032,+50323,149773 ,+375,2130779
-BRA,Brazil,2419091,+22657,87004  ,+508,697813
-IND,India,1436019,+50525,32810 ,+714,484474
-RUS,Russia,812485,+5765,13269 ,+77,198966
-ZAF,South Africa,445433,+11233,6769 ,+114,173587
-MEX,Mexico,385036,+6751,43374 ,+729,94484
+USA,United States,4371839,,149849 ,,2131861
+BRA,Brazil,2419901,,87052 ,,698575
+IND,India,1436019,,32812 ,,484472
+RUS,Russia,812485,,13269 ,,198966
+ZAF,South Africa,445433,,6769 ,,173587
+MEX,Mexico,390516,+5480,43680 ,+306,95331
 PER,Peru,379884,,18030 ,,98724
-CHL,Chile,345790,+2198,9112 ,+92,18583
+CHL,Chile,345790,,9112 ,,18583
 ESP,Spain,319501,,28432 ,,N/A
-GBR,United Kingdom,299426,+745,45752 ,+14,N/A
-IRN,Iran,291172,+2333,15700 ,+216,22259
-PAK,Pakistan,273113,+1226,5822 ,+35,29857
-SAU,Saudi Arabia,266941,+1968,2733 ,+30,43885
-COL,Colombia,248976,+8181,8525 ,+256,115414
-ITA,Italy,246118,+254,35107 ,+5,12565
-TUR,Turkey,226100,+927,5613 ,+17,11000
-BGD,Bangladesh,223453,+2275,2928 ,+54,96643
-DEU,Germany,206741,+409,9203 ,+1,6938
+GBR,United Kingdom,299426,,45752 ,,N/A
+IRN,Iran,291172,,15700 ,,22259
+PAK,Pakistan,273113,,5822 ,,29857
+SAU,Saudi Arabia,266941,,2733 ,,43885
+COL,Colombia,248976,,8525 ,,115414
+ITA,Italy,246118,,35107 ,,12565
+TUR,Turkey,226100,,5613 ,,11000
+BGD,Bangladesh,223453,,2928 ,,96643
+DEU,Germany,206741,,9203 ,,6938
 FRA,France,180528,,30192 ,,69521
-ARG,Argentina,162526,+4192,2939 ,+46,89069
-CAN,Canada,113862,+306,8890 ,+5,5628
-IRQ,Iraq,110032,+2459,4362 ,+78,30453
-QAT,Qatar,109305,+269,165 ,+1,3116
-IDN,Indonesia,98778,+1492,4781 ,+67,37342
-EGY,Egypt,92062,+479,4606 ,+48,53625
-KAZ,Kazakhstan,81720,+1494,585 ,,29312
-PHL,Philippines,80448,+2036,1932 ,+35,52406
-ECU,Ecuador,80036,,5507 ,,39985
+ARG,Argentina,162526,,2939 ,,89069
+CAN,Canada,113911,,8890 ,,5666
+IRQ,Iraq,110032,,4362 ,,30453
+QAT,Qatar,109305,,165 ,,3116
+IDN,Indonesia,98778,,4781 ,,37342
+EGY,Egypt,92062,,4606 ,,53625
+KAZ,Kazakhstan,81720,,585 ,,29312
+ECU,Ecuador,80694,,5515 ,,40283
+PHL,Philippines,80448,,1932 ,,52406
 SWE,Sweden,78997,,5697 ,,N/A
-OMN,Oman,76005,+1147,384 ,+13,20322
-BOL,Bolivia,68281,+1825,2535 ,+62,44795
-BLR,Belarus,67132,+130,534 ,+4,6173
-BEL,Belgium,65727,+528,9821 ,+4,38481
-UKR,Ukraine,64849,+920,1605 ,+15,27437
-KWT,Kuwait,63773,+464,433 ,+4,8967
-DOM,Dominican Republic,62908,+2012,1063 ,+8,33242
-ISR,Israel,61956,+1278,470 ,+13,34461
-ARE,United Arab Emirates,58913,+351,344 ,+1,6387
-PAN,Panama,58864,,1275 ,,24161
-NLD,Netherlands,52946,+214,6139 ,,N/A
-SGP,Singapore,50369,+481,27 ,,4821
-PRT,Portugal,50164,+209,1717 ,+1,13230
-GTM,Guatemala,45053,+561,1734 ,+35,11707
-ROU,Romania,44798,+1120,2187 ,+22,16968
-POL,Poland,43065,+443,1671 ,+7,8641
-NGA,Nigeria,40532,+555,858 ,+2,22300
-BHR,Bahrain,39131,+384,140 ,+3,3302
-HND,Honduras,38438,+879,1098 ,+37,32627
-ARM,Armenia,37317,+321,705 ,+5,10134
-AFG,Afghanistan,36157,+121,1259 ,+11,9718
-CHE,Switzerland,34412,+110,1977 ,,1735
-KGZ,Kyrgyz Republic,32813,+689,1277 ,+28,11148
-GHA,Ghana,32437,+586,161 ,,3349
-AZE,Azerbaijan,30050,+417,417 ,+9,6949
-JPN,Japan,29382,+596,996 ,+3,6624
-DZA,Algeria,27357,+593,1155 ,+9,8114
-IRL,Ireland,25881,+12,1764 ,,753
-SRB,Serbia,23730,+467,534 ,+8,9149
-MDA,Moldova,23034,+206,735 ,+3,6390
-UZB,Uzbekistan,20531,+579,116 ,+5,9310
-AUT,Austria,20472,+134,712 ,,1551
-MAR,Morocco,20278,+633,313 ,+8,3527
-NPL,Nepal,18613,+130,45 ,,5440
+OMN,Oman,76005,,384 ,,20322
+BOL,Bolivia,69429,+1148,2583 ,+48,45677
+BLR,Belarus,67132,,534 ,,6173
+BEL,Belgium,65727,,9821 ,,38481
+UKR,Ukraine,64849,,1605 ,,27437
+KWT,Kuwait,63773,,433 ,,8967
+DOM,Dominican Republic,62908,,1063 ,,33242
+ISR,Israel,61956,,470 ,,34461
+PAN,Panama,60296,,1294 ,,24871
+ARE,United Arab Emirates,58913,,344 ,,6387
+NLD,Netherlands,52946,,6139 ,,N/A
+SGP,Singapore,50369,,27 ,,4821
+PRT,Portugal,50164,,1717 ,,13230
+GTM,Guatemala,45053,,1734 ,,11707
+ROU,Romania,44798,,2187 ,,16968
+POL,Poland,43065,,1671 ,,8641
+NGA,Nigeria,40532,,858 ,,22300
+BHR,Bahrain,39131,,140 ,,3302
+HND,Honduras,38438,,1098 ,,32627
+ARM,Armenia,37317,,705 ,,10134
+AFG,Afghanistan,36157,,1259 ,,9718
+CHE,Switzerland,34412,,1977 ,,1735
+GHA,Ghana,32969,,168 ,,3307
+KGZ,Kyrgyz Republic,32813,,1277 ,,11148
+AZE,Azerbaijan,30050,,417 ,,6949
+JPN,Japan,29382,,996 ,,6624
+DZA,Algeria,27357,,1155 ,,8114
+IRL,Ireland,25881,,1764 ,,753
+SRB,Serbia,23730,,534 ,,9149
+MDA,Moldova,23034,,735 ,,6390
+UZB,Uzbekistan,20531,,116 ,,9310
+AUT,Austria,20472,,712 ,,1551
+MAR,Morocco,20278,,313 ,,3527
+NPL,Nepal,18613,,45 ,,5440
+KEN,Kenya,17603,,280 ,,9580
 CMR,Cameroon,16708,,385 ,,1784
-KEN,Kenya,16643,,278 ,,8791
-CIV,Cote d'Ivoire,15596,+102,96 ,+2,5322
-CZE,Czech Republic,15324,+112,371 ,+2,3525
-CRI,Costa Rica,15229,+629,104 ,+6,11389
-VEN,Venezuela,14929,,138 ,,5996
-SLV,El Salvador,14630,+409,400 ,+10,6582
-AUS,Australia,14403,+453,155 ,+10,5229
-KOR,South Korea,14150,+58,298 ,,962
-ETH,Ethiopia,13968,+720,223 ,+14,7529
+CIV,Cote d'Ivoire,15596,,96 ,,5322
+VEN,Venezuela,15463,,142 ,,5575
+CZE,Czech Republic,15324,,371 ,,3525
+CRI,Costa Rica,15229,,104 ,,11389
+AUS,Australia,14935,+532,161 ,+6,5603
+SLV,El Salvador,14630,,400 ,,6582
+KOR,South Korea,14175,+25,299 ,+1,971
+ETH,Ethiopia,13968,,223 ,,7529
 DNK,Denmark,13438,,613 ,,485
 SDN,Sudan,11385,,717 ,,4778
-PSE,Palestine,10469,+163,76 ,+1,6641
-BGR,Bulgaria,10427,+115,340 ,+2,4732
-MKD,Macedonia,10086,+152,460 ,,4199
+PSE,Palestine,10469,,76 ,,6641
+BGR,Bulgaria,10427,,340 ,,4732
+MKD,Macedonia,10086,,460 ,,4199
 BIH,Bosnia and Herzegovina,9767,,280 ,,4932
-SEN,Senegal,9681,+129,191 ,+4,3081
-MDG,Madagascar,9295,+429,85 ,+7,3631
-NOR,Norway,9117,+6,255 ,,110
-MYS,Malaysia,8897,+13,124 ,+1,173
-COD,DR Congo,8831,+30,204 ,,3117
-FIN,Finland,7393,+5,329 ,,144
+SEN,Senegal,9681,,191 ,,3081
+MDG,Madagascar,9295,,85 ,,3631
+NOR,Norway,9117,,255 ,,110
+MYS,Malaysia,8897,,124 ,,173
+COD,DR Congo,8831,,204 ,,3117
+FIN,Finland,7393,,329 ,,144
 GUF,French Guiana,7332,,41 ,,1524
-HTI,Haiti,7297,+37,157 ,+1,2775
-TJK,Tajikistan,7192,+42,59 ,,1163
+HTI,Haiti,7297,,157 ,,2775
+TJK,Tajikistan,7192,,59 ,,1163
+GIN,Guinea,7008,,43 ,,813
 GAB,Gabon,6984,,49 ,,2472
-GIN,Guinea,6927,,42 ,,787
-LUX,Luxembourg,6272,+83,112 ,,1513
-MRT,Mauritania,6171,+20,156 ,,1585
-DJI,Djibouti,5050,+11,58 ,,26
-HRV,Croatia,4857,+65,136 ,+3,855
-ALB,Albania,4763,+126,138 ,+4,1943
-CAF,Central African Republic,4599,+1,59 ,,2994
-ZMB,Zambia,4481,+153,139 ,,1992
-PRY,Paraguay,4444,+116,41 ,+1,1609
-HUN,Hungary,4435,+11,596 ,,510
-GRC,Greece,4193,+27,202 ,+1,2617
-LBN,Lebanon,3750,+168,51 ,+4,2007
-MWI,Malawi,3557,,94 ,,1878
+LUX,Luxembourg,6272,,112 ,,1513
+MRT,Mauritania,6171,,156 ,,1585
+DJI,Djibouti,5050,,58 ,,26
+HRV,Croatia,4857,,136 ,,855
+ALB,Albania,4763,,138 ,,1943
+CAF,Central African Republic,4599,,59 ,,2994
+ZMB,Zambia,4481,,139 ,,1992
+PRY,Paraguay,4444,,41 ,,1609
+HUN,Hungary,4435,,596 ,,510
+GRC,Greece,4193,,202 ,,2617
+LBN,Lebanon,3750,,51 ,,2007
+MWI,Malawi,3640,,99 ,,1902
 NIC,Nicaragua,3439,,108 ,,839
-MDV,Maldives,3302,+50,15 ,,759
-THA,Thailand,3291,+9,58 ,,124
+MDV,Maldives,3302,,15 ,,759
+THA,Thailand,3291,,58 ,,124
 SOM,Somalia,3178,,93 ,,1564
 GNQ,Equatorial Guinea,3071,,51 ,,2178
 COG,Congo Republic,3038,,51 ,,2231
 MYT,Mayotte,2862,,38 ,,174
-LKA,Sri Lanka,2782,+12,11 ,,665
-MNE,Montenegro,2747,,43 ,,2040
-LBY,Libya,2669,+122,60 ,+2,2056
-HKG,Hong Kong,2634,+128,18 ,,1121
-ZWE,Zimbabwe,2512,+78,34 ,,1960
-MLI,Mali,2510,+7,123 ,,476
-CUB,Cuba,2495,+17,87 ,,59
-SSD,South Sudan,2258,,45 ,,1038
-CPV,Cabo Verde,2258,,22 ,,873
-SWZ,Eswatini,2207,+65,32 ,+4,1189
-SVK,Slovakia,2179,+38,28 ,,574
-SVN,Slovenia,2082,+16,116 ,,288
-EST,Estonia,2034,+1,69 ,,43
-LTU,Lithuania,2008,+7,80 ,,312
+MNE,Montenegro,2799,,43 ,,2017
+LKA,Sri Lanka,2782,,11 ,,665
+LBY,Libya,2669,,60 ,,2056
+HKG,Hong Kong,2634,,18 ,,1121
+ZWE,Zimbabwe,2512,,34 ,,1960
+MLI,Mali,2510,,123 ,,476
+CUB,Cuba,2495,,87 ,,59
+CPV,Cabo Verde,2307,,22 ,,838
+SSD,South Sudan,2262,,45 ,,1042
+SWZ,Eswatini,2207,,32 ,,1189
+SVK,Slovakia,2179,,28 ,,574
+SVN,Slovenia,2082,,116 ,,288
+EST,Estonia,2034,,69 ,,43
+LTU,Lithuania,2008,,80 ,,312
 GNB,Guinea-Bissau,1954,,26 ,,1125
-ISL,Iceland,1847,+4,10 ,,14
-RWA,Rwanda,1821,+69,5 ,,898
-SLE,Sierra Leone,1783,+15,66 ,,404
-NAM,Namibia,1775,+88,8 ,+1,1692
-BEN,Benin,1770,+76,35 ,+1,699
-YEM,Yemen,1681,+7,479 ,+5,405
-MOZ,Mozambique,1669,+53,11 ,,1065
+ISL,Iceland,1847,,10 ,,14
+RWA,Rwanda,1821,,5 ,,898
+SLE,Sierra Leone,1783,,66 ,,404
+NAM,Namibia,1775,,8 ,,1692
+BEN,Benin,1770,,35 ,,699
+YEM,Yemen,1681,,479 ,,405
+MOZ,Mozambique,1669,,11 ,,1065
 NZL,New Zealand,1556,,22 ,,21
-TUN,Tunisia,1452,+9,50 ,,260
-SUR,Suriname,1439,+58,23  ,,526
-LVA,Latvia,1219,+13,31 ,,143
-URY,Uruguay,1192,+18,34 ,,210
-JOR,Jordan,1168,+14,11 ,,116
-LBR,Liberia,1162,+7,72 ,+1,449
-GEO,Georgia,1131,+14,16 ,,195
-NER,Niger,1124,,69 ,,30
-UGA,Uganda,1115,+12,2 ,+1,131
+TUN,Tunisia,1452,,50 ,,260
+SUR,Suriname,1439,,23 ,,526
+LVA,Latvia,1219,,31 ,,143
+URY,Uruguay,1192,,34 ,,210
+JOR,Jordan,1168,,11 ,,116
+LBR,Liberia,1162,,72 ,,449
+NER,Niger,1136,,69 ,,40
+GEO,Georgia,1131,,16 ,,195
+UGA,Uganda,1115,,2 ,,131
 BFA,Burkina Faso,1086,,53 ,,113
-CYP,Cyprus,1053,,19 ,,182
-AGO,Angola,932,+16,40 ,+1,650
+CYP,Cyprus,1057,,19 ,,186
+AGO,Angola,932,,40 ,,650
 TCD,Chad,915,,75 ,,30
 AND,Andorra,897,,52 ,,42
-STP,Sao Tome and Principe,862,,14 ,,186
-TGO,Togo,853,,17 ,,249
-JAM,Jamaica,837,+6,10 ,,116
-MLT,Malta,700,+14,9 ,,26
+TGO,Togo,868,,18 ,,251
+STP,Sao Tome and Principe,863,,14 ,,153
+JAM,Jamaica,842,+5,10 ,,118
+MLT,Malta,700,,9 ,,26
 SMR,San Marino,699,,42 ,,0
 BWA,Botswana,686,,1 ,,633
 REU,Reunion,657,,3 ,,96
-SYR,Syria,650,+23,38 ,+2,412
+SYR,Syria,650,,38 ,,412
 TZA,Tanzania,509,,21 ,,305
-LSO,Lesotho,505,+86,12 ,+3,365
+LSO,Lesotho,505,,12 ,,365
 TWN,Taiwan,458,,7 ,,11
-VNM,Vietnam,420,+3, ,,55
+VNM,Vietnam,420,, ,,55
+GUY,Guyana,370,,20 ,,169
 BDI,Burundi,361,,1 ,,81
-GUY,Guyana,360,,20 ,,160
 COM,Comoros,354,,7 ,,19
-MMR,Myanmar,350,+2,6 ,,54
+MMR,Myanmar,350,,6 ,,54
 MUS,Mauritius,344,,10 ,,2
-BHS,Bahamas,342,+16,11 ,,240
+BHS,Bahamas,342,,11 ,,240
 IMN,Isle of Man,336,,24 ,,0
 MNG,Mongolia,288,, ,,70
 GMB,Gambia,277,,6 ,,211
 MTQ,Martinique,269,,15 ,,156
 ERI,Eritrea,263,, ,,74
 KHM,Cambodia,225,, ,,82
-FRO,Faeroe Islands,214,+22, ,,26
+FRO,Faeroe Islands,214,, ,,26
 GLP,Guadeloupe,203,,14 ,,13
 CYM,Cayman Islands,203,,1 ,,0
 GIB,Gibraltar,185,, ,,5
@@ -180,12 +180,12 @@ ABW,Aruba,119,,3 ,,14
 MCO,Monaco,116,,4 ,,8
 SYC,Seychelles,114,, ,,75
 BRB,Barbados,108,,7 ,,7
-TCA,Turks and Caicos Islands,97,+5,2 ,,60
+TCA,Turks and Caicos Islands,97,,2 ,,60
 SXM,Sint Maarten,93,,15 ,,15
-BTN,Bhutan,93,+1, ,,8
+BTN,Bhutan,93,, ,,8
 LIE,Liechtenstein,86,,1 ,,4
 ATG,Antigua and Barbuda,82,,3 ,,19
-PNG,Papua New Guinea,62,+23, ,,51
+PNG,Papua New Guinea,62,, ,,51
 PYF,French Polynesia,62,, ,,2
 VCT,St. Vincent and the Grenadines,52,, ,,13
 MAF,Saint-Martin,49,,3 ,,5
@@ -206,8 +206,8 @@ MSR,Montserrat,12,,1 ,,1
 VAT,Vatican,12,, ,,0
 BES,"Bonaire, Saint Eustatius and Saba",11,, ,,4
 ESH,Western Sahara,10,,1 ,,1
-VGB,British Virgin Islands,8,,1  ,,0
+VGB,British Virgin Islands,8,,1 ,,0
 BLM,St. Barths,7,, ,,1
 SPM,St. Pierre and Miquelon,4,, ,,3
 AIA,Anguilla,3,, ,,0
-CHN,China,83830,+46,4634 ,,288
+CHN,China,83891,+61,4634 ,,339
