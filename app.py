@@ -304,6 +304,7 @@ def drawMap(metric, title_text, scope):
                     )
     )
     fig.update_layout(
+        geo=dict(bgcolor='rgba(0,0,0,0)'),
         plot_bgcolor=colors['background'],
         paper_bgcolor=colors['background'],
         font_color=colors['text']
