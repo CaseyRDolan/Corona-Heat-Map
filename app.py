@@ -82,12 +82,11 @@ app.layout = html.Div( style={'color': colors['text']}, children=[
             interval=30000,
             n_intervals=0
         )
-    ]),
+    ])
 ])
 
-# Callback to update heatmap every 10 seconds and after every metric/scope change
 
-
+# Callback to update heatmap every 10 seconds and after every scope change
 @app.callback(
     Output('heatmap', 'figure'),
     [
@@ -113,8 +112,8 @@ def update_figure(metric, scope, n):
         return drawMap(metric, "Total Deaths Attributed to COVID-19 Today", scope)
     else:
         return drawMap("New Cases", "Total New COVID-19 Cases Today", scope)
-
-
+        
+        
 # Function to get abbreviated state code of a US state
 def get_abbr(state):
     us_state_abbrev = {
