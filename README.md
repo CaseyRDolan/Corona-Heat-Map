@@ -38,7 +38,7 @@ Below is a list of steps to deploy using Heroku on windows:
 7. cd into the project directory: cd Corona-Heat-Map
 8. login to heroku within the command prompt: heroku login
 9. create the app within heroku: heroku create "name"
-10.push the code to heroku: git push heroku master
+10. push the code to heroku: git push heroku master
 
 ## Team
 [Casey Dolan](https://github.com/CaseyRDolan) | [Hollis Pauquette](https://github.com/pauquette) | [Anthony DeMartino](https://github.com/AnthonyRenato) | [Navid Khan](https://github.com/Nvd09)
