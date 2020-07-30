@@ -23,9 +23,7 @@ app.layout = html.Div( style={'color': colors['text']}, children=[
     # Div to hold the two dropdown menus
     html.H2("COVID-19 Heatmap", id="header"),
     html.Div([
-
         # Dropdown to select the scope of the heatmap
-
         html.Label(["Select Country", dcc.Dropdown(
             id='scope_menu',
             options=[
@@ -176,28 +174,27 @@ def get_abbr(state):
     }
     return us_state_abbrev[state.rstrip()]
 
+
 # Function to scrape COVID-19 data from the Worldometers website for each state
-
-
 def scrape_state_data():
     data = []
     filename = 'data/state_data.csv'
     URL = 'https://www.worldometers.info/coronavirus/country/us/'
-    page = requests.get(URL)  # Visit Worldometers site and download HTML
-    soup = BeautifulSoup(page.content, 'html.parser')  # Parse HTML content
+    page = requests.get(URL)
+    soup = BeautifulSoup(page.content, 'html.parser')
 
     # List of HTML data for each state
     states = soup.find(id='usa_table_countries_today').find(
         'tbody').find_all('tr')
-    states.pop(0)  # Remove first entry (USA Total)
+    states.pop(0)
 
-    # Write to .csv file
+    # Open a file for writing as a .csv
     with open(filename, 'w') as csvfile:
         csvwriter = csv.writer(csvfile)
         csvwriter.writerow(['Code', 'Name', 'Total Cases', 'New Cases',
                             'Total Deaths', 'New Deaths', 'Active Cases'])
 
-        # For each state, extract data, create a new State object and add it to data
+        # Add scraped data to a list of lists
         for state in states:
             numbers = state.find_all('td', limit=6)
             new_data = [get_abbr(numbers[0].text.strip('\n')),
@@ -209,7 +206,7 @@ def scrape_state_data():
                         numbers[5].text.replace(',', '')]
             data.append(new_data)
 
-        csvwriter.writerows(data)
+        csvwriter.writerows(data) # Write list to .csv file
 
 
 # Function to scrape COVID-19 data from worldometers website for each Country
@@ -219,11 +216,12 @@ def scrape_country_data():
     filename = 'data/country_data.csv'
     URL = 'https://www.worldometers.info/coronavirus/#countries'
     page = requests.get(URL)
-    soup = BeautifulSoup(page.content, 'html.parser')  # Parse HTML content
+    soup = BeautifulSoup(page.content, 'html.parser')
 
     # List of HTML data for each country
     countries = soup.find(id='main_table_countries_today').find(
         'tbody').find_all('tr')
+        
     # Remove Data from non-countries (global total, continents, ships)
     for i in range(8):
         countries.pop(0)
@@ -231,7 +229,6 @@ def scrape_country_data():
     # Open a file for writing as a .csv
     with open(filename, 'w') as csvfile:
         csvwriter = csv.writer(csvfile)
-        # Write .csv headers
         csvwriter.writerow(['Code', 'Name', 'Total Cases', 'New Cases',
                             'Total Deaths', 'New Deaths', 'Active Cases'])
         # For each country, extract data and write it to the .csv
@@ -305,21 +302,6 @@ def drawMap(metric, title_text, scope):
         geo=dict(bgcolor='rgba(0,0,0,0)'),
         font_color=colors['text']
     )
-    # Give figure style
-    # fig.update_layout(
-    #    title_text = '<b>' + title_text + title_ending,
-    #    uirevision = scope,
-    #    geo=dict(
-    #        resolution = 50,
-    #        scope = 'usa' if scope == 'USA-states' else 'world',
-    #        showframe=False,
-    #        showcoastlines=False,
-    #        projection_type = scope if scope == 'orthographic' else 'albers usa'
-    #    ),
-    #    autosize = True,
-    #    width = 1600,
-    #    height = 900
-    # )
 
     return fig
 
