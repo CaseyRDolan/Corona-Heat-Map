@@ -8,9 +8,8 @@
  Due to its compatibility with the Flask web framework and its relative ease of deployment, we chose to use Heroku web hosting.
  Our deployed version of the Corona-Heat-Map web app can be found here: https://covidheatmap.herokuapp.com/
  
- Below is a list of steps to deploy using Heroku on windows.
-
- Steps to deploy the Corona-Heat-Map web app using heroku on windows:
+ Below is a list of steps to deploy using Heroku on windows:
+ 
  1.  download python 3 (https://www.python.org/downloads/)
  2.  download git (https://git-scm.com/downloads)
  3.  download heroku and create an account (https://devcenter.heroku.com/articles/heroku-cli)
