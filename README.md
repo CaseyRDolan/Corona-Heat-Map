@@ -1,5 +1,5 @@
 # Corona-Heat-Map
-A Dash web app based on current COVID-19 data from [worldometers.info](https://www.worldometers.info/coronavirus/). It displays current COVID-19 metrics on choropleth maps of the world and the United States. It can be used to quickly compare the spread of COVID-19 across the globe visually.
+A Dash web app based on current COVID-19 data from [worldometers.info](https://www.worldometers.info/coronavirus/). It displays current COVID-19 metrics on choropleth maps of the world and the United States. It can be used to quickly compare the current extent of COVID-19 from country to country and state to state visually.
 <br><br>
 Built for M&T Bank's "Code for a Cause" challenge during their 2020 Technology Intern Summer Engagement Journey.
 
@@ -19,9 +19,10 @@ To report a bug, please open an issue [here](https://github.com/CaseyRDolan/Coro
 To request a feature, please open an issue [here](https://github.com/CaseyRDolan/Corona-Heat-Map/issues/new) and give us your ideas for additional features!
 
 ## To-Do
-- Add another graph based on data selected with the plotly lasso tool on the choropleth map.
+- Add another graph based on data selected with the plotly lasso tool on the choropleth map
 - Add top 5 lists for each of the metrics being represented
 - Add information down to the county level within the United states
+- Add relevant links to country and US state health services for COVID-19
 
 ## Deployment
 Corona-Heat-Map is a Dash web app, which uses the Flask web framework. It can be hosted and deployed on any of the major web hosting services, ie. Azure (IIS), AWS (Elastic Beanstalk), or Google app Engine. A full list of deployment options and steps can be found here: https://flask.palletsprojects.com/en/1.1.x/deploying/
