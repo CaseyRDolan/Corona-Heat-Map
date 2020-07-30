@@ -1,13 +1,7 @@
 # Corona-Heat-Map
-<table>
-<tr>
-<td>
-  A Dash web app using BeautifulSoup and Plotly to scrape COVID-19 data from [worldometers.info](https://www.worldometers.info/coronavirus/) and display it visually. It displays current COVID-19 metrics on choropleth maps of the world and the United States. It can be used to quickly compare the spread of COVID-19 across the globe visually.
+A Dash web app based on current COVID-19 data from [worldometers.info](https://www.worldometers.info/coronavirus/). It displays current COVID-19 metrics on choropleth maps of the world and the United States. It can be used to quickly compare the spread of COVID-19 across the globe visually.
 <br><br>
-Built for M&T Bank's "Code for a Cause" challenge during their 2020 Summer Engagement Journey.
-</td>
-</tr>
-</table>
+Built for M&T Bank's "Code for a Cause" challenge during their 2020 Technology Intern Summer Engagement Journey.
 
 ## Demo
 [Working Demo](https://covidheatmap.herokuapp.com)<br>
